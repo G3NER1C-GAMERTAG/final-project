@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Fundamentals (Final Project)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-main">
+            <a href="index.html" class="nav-logo">Cybersecurity Fundamentals</a>
+            <ul class="nav-links">
+                <li><a href="CIATriad.html">CIA Triad</a></li>
+                <li><a href="Data.html">Data States</a></li>
+                <li><a href="A3.html">AAA</a></li>
+                <li><a href="Pass.html">Passwords</a></li>
+                <li><a href="Hash.html">Hashing</a></li>
+                <li><a href="Authentication.html">Authentication</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Understanding the CIA Triad & Authentication</h1>
+            <h3>Computer & Information Science - Seaway Tech</h3>
+        </div>
+    </section>
+    
+    <main>
+        <section id="triad">
+        <h1 class="title">The CIA Framework</h1>
+        <h3 class="subtitle">Core Framework</h3>
+        <p>Data is a valuable asset. The primary goal of cybersecurity is to maintain three critical properties - collectively known as the <strong>CIA Triad</strong> - for all data, all the time.</p>
+        <div class="triad-grid">
+
+            <div class="triad-card">
+                <h3>Confidentiality</h3>
+                <h4>Data is not revealed</h4>
+                <p>Protection against UNAUTHORIZEDD ACCESS. Only those with proper permission should ever be able to read or view the data.</p>
+                <p>Think of it as a locked diary - only the owner (or those granted access) can read it.</p>
+                <p>Example: Edward Snowden's 2013 leak of classified NSA government data is a landmark example of a Confidentiality breach.</p>
+            </div>
+            <div class="triad-card">
+                <h3>Integrity</h3>
+                <h4>Data is intact - not modified or corrupted</h4>
+                <p>Protection against unauthorized modification. Data must remain accurate and trustworthy from the moment it is created until it is accessed.</p>
+                <p>If someone changes your grade in the grade book without permission, that's an Integrity breach.</p>
+                <p>Example: The Stuxnet worm secretly altered code on Iranian centrifuge macines, causing them to spin too fact and physically break - a classic Integrity attack.</p>
+            </div>
+            <div class="triad-card">
+                <h3>Availability</h3>
+                <h4>Data is accessible to allowed users</h4>
+                <p>Protection against denial of service. Authorized users must be able to access data and systems whenever they legitimately need them</p>
+                <p>A website that is always down, or an account that stays locked, fails the availability test.</p>
+                <p>Example: The Mirai Botnet used 145,000+ infected cameras and devices to flood security journalist Brian Krebs' website with traffic, crashing it for four days - a textbook DDoS / Availability breach.</p>
+            </div>
+
+        </div>
+        <section id="closer">
+            <p>Security Formula: <strong>Prevention + (Detection + Response) = Protection.</strong> Every cybersecurity technique fits into at least one of these three elements, and every element maps back to the CIA Triad.</p>
+        </section>
+    </main>
+
+
+</body>
+</html>
