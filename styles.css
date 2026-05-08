@@ -1,10 +1,16 @@
 body {
     margin: 0; /* remove default gap so hero can touch top */
     color: white;
-    font-family: cursive;
+    font-family: iceland;
     background: color;
     text-align: center;
     background-color: black;
+}
+
+.hero-content {
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .nav-main  {
@@ -53,31 +59,20 @@ body {
 
 .nav-links a:hover,
 .nav-links a:active {
-    background-color: rgb(255, 255, 255);
     color: #ff0000;
     transform: translateY(-7px);
     font-weight: bold;
 }
 
-
-
 .hero-content {
-    position: absolute; /* position over the image */
-    z-index: 20;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* perfectly center */
-    text-align: center;
-    color: white;
-    max-width: 900px;
-    width: 90%;
-    padding: 1rem 1.25rem;
-    margin: 0;
-    pointer-events: none; /* allow clicks to pass through if needed */
+    transform: translate(-50%, -50%);
 }
 
 .hero-content h1 {
-    margin: 0;
+    margin: 0 auto;
     font-size: clamp(1.5rem, 4.5vw, 3.5rem);
     text-shadow: 2px 2px 6px rgba(0,0,0,0.75);
     text-align: center;
@@ -85,9 +80,9 @@ body {
 
 .hero-image {
     width: 100%;
-    height: 89.91vh; /* visible hero height */
+    height: 89.91vh;
     position: relative;
-    margin: 0; /* ensure no gap above */
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -131,14 +126,13 @@ body {
 
 .triad-grid {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     gap: 2rem;
+    padding-top: 50rem;
     
 }
 
 .triad-card {
-    background-color: rgb(190, 0, 0);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: all 0.3s ease;
     border: 3px solid black;
@@ -148,11 +142,16 @@ body {
 }
 
 .triad-card {
-    padding: 1.5rem;  
+    flex: 1 1 220px;
+    background: rgb(0, 0, 0);
+    border: 2px solid lightblue;
+    border-top: 5px solid green;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);  
 }
 
 .triad-card h3 {
-    color: blue;
+    color: rgb(255, 255, 255);
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
@@ -164,10 +163,11 @@ body {
     
 }
 
-.button {
-    background-color: rgb(190, 0, 0);
-    color: rgb(255, 255, 255);
-    border: none;
+.btn {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 1rem;
     padding: 0.75rem 1.5rem;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -175,14 +175,14 @@ body {
     text-decoration: none;
 }
 
-.button a {
+.btn a {
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
 }
 
-.button a:hover {
+.btn a:hover {
     background-color: white;
     color: rgb(255, 0, 0);
     transform: translateY(-7px);
@@ -249,24 +249,13 @@ body {
     border: 10px black solid ;
 }
 
-.info {
+.final {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 0, 0, 0.5);
     text-decoration: none;
     font-size: 20px;
     padding: 0.5rem 1rem;
     font-weight: bold;
     border: 10px black solid;
-}
-
-.moolah {
-    display: flex;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    font-size: 40px;
-    padding: 0.5rem 1rem;
-    font-weight: bold;
-    border: 10px black solid;
-}
+} 
