@@ -6,12 +6,22 @@
     <title>Cybersecurity Fundamentals (Final Project)</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        #hero {
+     #hero {
      background-image: url('images/images/attacks1.png');
-     background-size: cover;
-     background-position: center;
-     min-height: 100vh;
-     overflow: hidden;
+    width: 100%;
+    height: 89.91vh; /* visible hero height */
+    position: relative;
+    margin: 0; /* ensure no gap above */
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center; /* perfectly center the image */
+    margin: 0 auto;
 }
 
 #hero::before {
@@ -22,6 +32,7 @@
      width: 100%;
      height: 100%;
      background: rgba(102, 0, 0, 0.65);
+     overflow: auto;
 }
     </style>
 </head>
@@ -69,10 +80,20 @@
                 <p>Keep track of what happened. Also called auditing. Logs and records let us review activity, detect anomalies, and respond to incidents.</p>
             </div>
     </section>
-    <section id="extra-data">
-        <p>Something you know (password or PIN)<br>
-        Something you have (smart card, hardware token, code sent to your phone)<br>
+        <section class="extra-data">
+        <p>Something you know (password or PIN) | 
+        Something you have (smart card, hardware token, code sent to your phone) | 
         Something you are (fingerprint, retina scan, voice)
         </p>
+        </section>
 </body>
+        <footer class="stuff">
+        <h2 class="red"> ꗃ CyberSecure Fundamentals ꗃ </h2>
+        <p>CIA Triad & Authentication<br>
+            Computer and Information Science - Seaway Tech | 
+            Content based on the NIST Cybersecurity Framework | 
+            <strong class="red">NIST CyberFramework &middot; HaveIBeenPwned</strong> | 
+            Images created by gamma.app and Google Gemini | 
+            &copy; 2026 CyberSecure Fundamentals - All Rights Reserved</p>
+    </footer>
 </html>

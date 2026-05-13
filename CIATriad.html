@@ -6,15 +6,25 @@
     <title>Cybersecurity Fundamentals (Final Project)</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        #hero {
-     background-image: url('images/images/attacks1.png');
-     background-size: cover;
-     background-position: center;
-     min-height: 100vh;
-     overflow: hidden;
+    #hero {
+    background-image: url('images/images/attacks1.png');
+    width: 100%;
+    height: 89.91vh;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+ }
+
+    .hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 auto;
 }
 
-#hero::before {
+     #hero::before {
      content: '';
      position: absolute;
      top: 0;
@@ -22,7 +32,8 @@
      width: 100%;
      height: 100%;
      background: rgba(102, 0, 0, 0.65);
-}
+     overflow: auto;
+     }
     </style>
 </head>
 <body>
@@ -45,9 +56,10 @@
         <section id="hero">
     <div class="hero-content">
         <h1>The CIA Framework</h1>
-        <h3>Core Framework</h3>
+        <h2>Core Framework</h2>
         <p>Data is a valuable asset. The primary goal of cybersecurity is to maintain three critical properties - collectively known as the <strong>CIA Triad</strong> - for all data, all the time.</p>
     </div>
+        </section>
         <div class="triad-grid">
 
             <div class="triad-card">
@@ -73,11 +85,18 @@
             </div>
 
         </div>
-        <section id="closer">
+        <section class="extra-data">
             <p>Security Formula: <strong>Prevention + (Detection + Response) = Protection.</strong> Every cybersecurity technique fits into at least one of these three elements, and every element maps back to the CIA Triad.</p>
         </section>
     </main>
-
-
 </body>
+    <footer class="stuff">
+        <h2 class="red"> ꗃ CyberSecure Fundamentals ꗃ </h2>
+        <p>CIA Triad & Authentication<br>
+            Computer and Information Science - Seaway Tech | 
+            Content based on the NIST Cybersecurity Framework | 
+            <strong class="red">NIST CyberFramework &middot; HaveIBeenPwned</strong> | 
+            Images created by gamma.app and Google Gemini | 
+            &copy; 2026 CyberSecure Fundamentals - All Rights Reserved</p>
+    </footer>
 </html>

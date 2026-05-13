@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Fundamentals (Final Project)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+#hero {
+     background-image: url('images/images/attacks1.png');
+    width: 100%;
+    height: 89.91vh;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 auto;
+}
+
+#hero::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(102, 0, 0, 0.65);
+     overflow: auto;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-main">
+            <a href="index.html" class="nav-logo"> ⌂ Cybersecurity Fundamentals ⌂ </a>
+            <ul class="nav-links">
+                <li><a href="CIATriad.html">CIA Triad</a></li>
+                <li><a href="Data.html">Data States</a></li>
+                <li><a href="A3.html">AAA</a></li>
+                <li><a href="Pass.html">Passwords</a></li>
+                <li><a href="Hash.html">Hashing</a></li>
+                <li><a href="Authentication.html">Authentication</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Password Security</h1>
+            <h2>Password Attacks & How to Defend Against Them</h2>
+            <p>Passwords are the most common - and most commonly attacked - form of authentication. Understanding the attack types is the first step to building a solid defense.</p>
+        </div>
+    </section>
+        <div class="triad-grid">
+
+            <div class="triad-card">
+                <h1>1. Brute Force</h1>
+                <p>Software that automatically tests every possible character combination until the correct password is found. Thorough but slow for complex passwords.</p>
+            </div>
+            <div class="triad-card">
+                <h1>2. Dictionary Attack</h1>
+                <p>Uses a large database of common words, names, and character substitutions (like p@ssw0rd) to rapidly guess passwords. Much faster than pure brute force.</p>
+            </div>
+            <div class="triad-card">
+                <h1>3. Password Spraying</h1>
+                <p>Tests one weak password against <i>many</i> accounts. Avoids account lockouts because each account only receives one incorrect attempt. </p>
+            </div>
+            <div class="triad-card">
+                <h1>4. Credential Stuffing</h1>
+                <p>Uses stolen username/password pairs from a known breach to attack other sites. Effective because 54% of people reuse passwords from across accounts.</p>
+            </div>
+        </div>
+        <section class="extra-data">
+            <h3>How Long to Brute Force Your Password?</h3>
+            <p>Estimated crack time based on password length and character types used.</p>
+        </section>
+        <table>
+            <header class="table-header">
+                <h2>Estimated Brute Force Crack Time by Password Length & Character Set</h2>
+                    <h3 class="great">Green = Safe</h3>
+                    <h3 class="fine">Yellow = Good, But Needs Improvement</h3>
+                    <h3 class="cracked">Red = Instant Crack</h3>
+            </header>
+            <tr>
+                <th># Chars</th>
+                <th>Numbers Only<br>
+                (0-9)</th>
+                <th>Lowercase Only<br>
+                (a-z)</th>
+                <th>Upper + Lower<br>
+                (A-Z), (a-z)</th>
+                <th>Numbers + Mixed Case<br>
+                (A-Z), (a-z), (0-9)</th>
+                <th>Numbers + Mixed + Symbols<br>
+                (All Characters)</th>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td class="REAL-BAD">Instantly</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td class="REAL-BAD">Instantly</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>18+</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        
+        </tr>
+        </table>
+    <footer class="stuff">
+        <h2 class="red"> ꗃ CyberSecure Fundamentals ꗃ </h2>
+        <p>CIA Triad & Authentication<br>
+            Computer and Information Science - Seaway Tech | 
+            Content based on the NIST Cybersecurity Framework   | 
+            <strong class="red">NIST CyberFramework &middot; HaveIBeenPwned</strong>  |  
+            Images created by gamma.app and Google Gemini | 
+            &copy; 2026 CyberSecure Fundamentals - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
