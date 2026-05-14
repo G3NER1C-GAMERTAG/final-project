@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Fundamentals (Final Project)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+#hero {
+     background-image: url('images/images/attacks1.png');
+    width: 100%;
+    height: 89.91vh;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 auto;
+}
+
+#hero::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(102, 0, 0, 0.65);
+     overflow: auto;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-main">
+            <a href="index.html" class="nav-logo"> ⌂ Cybersecurity Fundamentals ⌂ </a>
+            <ul class="nav-links">
+                <li><a href="CIATriad.html">CIA Triad</a></li>
+                <li><a href="Data.html">Data States</a></li>
+                <li><a href="A3.html">AAA</a></li>
+                <li><a href="Pass.html">Passwords</a></li>
+                <li><a href="Hash.html">Hashing</a></li>
+                <li><a href="Authentication.html">Authentication</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Beyond Passwords</h1>
+            <h2>Methods of Authentication</h2>
+            <p>Modern security goes far beyond passwords. Here are the key authentication methods used in real-worlds systems - and how combining them creates much stronger protection.</p>
+        </div>
+    </section>
+     <div class="triad-grid">
+                <div class="triad-card">
+                    <h1>Smart Cards</h1>
+                    <h2>Something You Have</h2>
+                    <p>Cards with an embedded chip that automatically recognized by an authenticating device. Proximity readers can detect them in a pocket or purse without physical contact.</p>
+
+                </div>
+                <div class="triad-card">
+                    <h1>Digital Certificate</h1>
+                    <h2>Something You Have</h2>
+                    <p>Servers use certificates to authenticate with browsers (The 🔒 in your address bar). Issued by trusted third-party Certificate Authorities (CAs).</p>
+
+                </div>
+                <div class="triad-card">
+                    <h1>Biometrics</h1>
+                    <h2>Something You Are</h2>
+                    <p>Uses measurable physical characteristics: Fingerprint, Retina scan, Voice, or even typing speed. Disney World uses finger biometrics for multi-day pass verification.</p>
+
+                </div>
+                <div class="triad-card">
+                    <h1>Hardware Tokens (OTP)</h1>
+                    <h2>Something You Have</h2>
+                    <p>A physical device that generates a new One-Time Password (OTP) every 60 seconds. Since each OTP is used exactly once, intercepting it is useless to an attacker.</p>
+
+                </div>
+                <div class="triad-card">
+                    <h1>Two-Factor Authentication (2FA)</h1>
+                    <h2>Know + Have</h2>
+                    <p>Combines two factors - such as password PLUS a PIN sent to your phone (loke Google 2-Step Verification). One stolen factor alone is useless.</p>
+
+                </div>
+                <div class="triad-card">
+                    <h1>Multi-Factor Authentication (MFA)</h1>
+                    <h2>Two or More Factors</h2>
+                    <p>Uses two or more different authentication factors. The golden standard for account security - combining know, have, and/or are dramatically reduces risk of breach.</p>
+
+                </div>
+                <div class="triad-card">
+                    <h1>Single Sign-On (SSO)</h1>
+                    <h2>One Login, Many Resources</h2>
+                    <p>One authentication grants access to many servers or services. Used widely in schools and businesses to reduce password fatigue while maintaining security.</p>
+
+                </div>
+                <div class="triad-card">
+                    <h1>Passphrases</h1>
+                    <h2>Something You Know</h2>
+                    <p>A string of multiple words offers more security than a complex password AND it's easiier to remember.<br>
+                    Example: "The 3 little pigs say do not forget the bacon!"</p>
+                </div>
+        </div>
+        
+        
+        <section class="extra-section">
+            <h2> Top 3 Ways to Stop Password Attacks</h2>
+        </section>
+        <div class="triad-grid">
+            <div class="triad-card">
+                <h1>1. Use Strong Passwords</h1>
+                <p>Long passwords with mixed characters won't be in a dictionary and take too long to crack. 12+ characters, all character types.</p>
+            </div>
+            <div class="triad-card">
+                <h1>2. Enable Account Lockout</h1>
+                <p>Lock accounts after 3-5 failed attempts. This stops all automated brute force, dictionary, and spraying attacks cold.</p>
+            </div>
+            <div class="triad-card">
+                <h1>3. Enable MFA/2FA</h1>
+                <p>Even if a password is stolen, an attacker still cannot lon in without your second facter. Enable it everywhere you can.</p>
+            </div>
+        </div>
+        <section class="extra-data">
+            <p>Useful Resources: Check if your credentials have been exposed at <a href="HaveIBeenPwned.com">HaveIBeenPwned.com</a> | Learn more about the NIST Cybersecurity Framework at <a href="nist.gov/cyberframework">nist.gov/cyberframework</a>.</p>
+        </section>
+</body>
+    <footer class="stuff">
+        <h2 class="red"> ꗃ CyberSecure Fundamentals ꗃ </h2>
+        <p>CIA Triad & Authentication<br>
+            Computer and Information Science - Seaway Tech | 
+            Content based on the NIST Cybersecurity Framework | <strong class="red">NIST CyberFramework &middot; HaveIBeenPwned</strong> |  
+            Images created by gamma.app and Google Gemini | 
+            &copy; 2026 CyberSecure Fundamentals - All Rights Reserved</p>
+    </footer>
+</html>

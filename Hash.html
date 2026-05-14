@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Fundamentals (Final Project)</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+#hero {
+     background-image: url('images/images/attacks1.png');
+    width: 100%;
+    height: 89.91vh;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    margin: 0 auto;
+}
+
+#hero::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: rgba(102, 0, 0, 0.65);
+     overflow: auto;
+}
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-main">
+            <a href="index.html" class="nav-logo"> ⌂ Cybersecurity Fundamentals ⌂ </a>
+            <ul class="nav-links">
+                <li><a href="CIATriad.html">CIA Triad</a></li>
+                <li><a href="Data.html">Data States</a></li>
+                <li><a href="A3.html">AAA</a></li>
+                <li><a href="Pass.html">Passwords</a></li>
+                <li><a href="Hash.html">Hashing</a></li>
+                <li><a href="Authentication.html">Authentication</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Password Storage</h1>
+            <h2>Password Hashing & Salting</h2>
+            <p>Passwords should never be stored as plain text. The most common safe storage method is <i>hashing</i> - a one-way mathematical transformation.</p>
+        </div>
+    </section>
+     <div class="triad-grid">
+
+            <div class="triad-card">
+                <h1>🔢 What is Hashing?</h1>
+                <h2>One Way Conversion</h2>
+                <p>Software that automatically tests every possible character combination until the correct password is found. Thorough but slow for complex passwords.</p>
+            </div>
+            <div class="triad-card">
+                <h1>🌈 Rainbow Tables</h1>
+                <h2>Attack Method</h2>
+                <p>Uses a large database of common words, names, and character substitutions (like p@ssw0rd) to rapidly guess passwords. Much faster than pure brute force.</p>
+            </div>
+            <div class="triad-card">
+                <h1>🧂 Salting</h1>
+                <h2>Defense Method</h2>
+                <p>Tests one weak password against <i>many</i> accounts. Avoids account lockouts because each account only receives one incorrect attempt. </p>
+            </div>
+            <div class="triad-card">
+                <h1>🖥️ Pass-the-Hash</h1>
+                <h2>Advanced Attack</h2>
+                <p>Uses stolen username/password pairs from a known breach to attack other sites. Effective because 54% of people reuse passwords from across accounts.</p>
+            </div>
+        </div>
+        <section class="extra-data">
+            <p>Where are passwords stored?<br>
+             On Windows: in the SAM registry hive.<br> 
+             On Linux: in /etc/shadow (root access only).<br> 
+             The older /etc/passwd file is world-readable and not safe for passwords.</p>
+        </section>
+</body>
+    <footer class="stuff">
+        <h2 class="red"> ꗃ CyberSecure Fundamentals ꗃ </h2>
+        <p>CIA Triad & Authentication<br>
+            Computer and Information Science - Seaway Tech | 
+            Content based on the NIST Cybersecurity Framework | <strong class="red">NIST CyberFramework &middot; HaveIBeenPwned</strong> |  
+            Images created by gamma.app and Google Gemini | 
+            &copy; 2026 CyberSecure Fundamentals - All Rights Reserved</p>
+    </footer>
+</html>
